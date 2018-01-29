@@ -1,0 +1,17 @@
+<!--pages/welcome/welcome.wxml-->
+<swiper 
+  autoplay="true" interval="10000" duration="500" class="p_all" >
+  <swiper-item>
+      <image class="p1" src='../images/1.png'></image>
+  </swiper-item>
+  <swiper-item>
+      <image class="p2" src='../images/2.png'></image>
+  </swiper-item>
+  <swiper-item>
+      <image class="p3" src='../images/3.png'></image>
+  </swiper-item>
+  <swiper-item>
+      <image class="p4" src='../images/4.png'></image>
+      <view class="next" bindtap='bindViewTap'>立即体验</view>
+  </swiper-item>
+</swiper>

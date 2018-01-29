@@ -1,0 +1,26 @@
+<!--pages/nopay/nopay.wxml-->
+<view class="head">
+  <text>{{}}</text>
+</view>
+<view class="content" wx:for="{{nopayarr}}">
+  <image src="{{item.image}}" class="left"></image>
+  <view class="right">
+    <text class="t1">{{item.productName}}</text>
+    <text class="t2">{{item.taste}}</text>
+    <view class="t_bottom">
+      <text class="t3">￥{{item.price}}</text>
+      <text class="t4">x {{item.quantity}}</text>
+    </view>
+  </view>
+</view>
+<view class="bottom"></view>
+<view class="fixed">
+  <text class="t1">共{{allsum}}件商品</text>
+  <view class="t2_all">
+    <view class="t2_content">
+      <text class="t2_first">合计：（元）</text>
+      <text class="t2_second">{{allcost}}</text>
+    </view>
+    <text class="t3" bindtap='bindpay'>支付</text>
+  </view>
+</view>

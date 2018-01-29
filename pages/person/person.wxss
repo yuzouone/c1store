@@ -1,0 +1,61 @@
+/* pages/person/person.wxss */
+page{
+  display:flex;
+  display:-webkit-flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items:center;
+}
+.head{
+  width:136rpx;
+  height:136rpx;
+  border-radius: 50%;
+  margin-top:100rpx;
+}
+.name{
+  margin-top:24rpx;
+}
+.name text{
+  font-size:30rpx;
+  color:#222222;
+}
+.city image{
+  width:26rpx;
+  height:26rpx;
+}
+.line{
+  width:100%;
+  border-top:1rpx solid #ccc;
+  margin-top:90rpx;
+}
+.pay{
+  width:100%;
+  display:flex;
+  display:-webkit-flex;
+  -ms-flex-direction:row;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-top:28rpx;
+}
+.pay_left{
+  display:flex;
+  display:-webkit-flex;
+  -ms-flex-direction:row;
+  flex-direction:row;
+  align-items: center;
+}
+.pay_left image{
+  width:40rpx;
+  height:40rpx;
+  margin-left: 30rpx;
+}
+.pay_left text{
+  font-size:30rpx;
+  color:#222222;
+  margin-left:30rpx;
+}
+.pay_right{
+  width:38rpx;
+  height:38rpx;
+  margin-right:30rpx;
+}

@@ -1,0 +1,32 @@
+<!--pages/person/person.wxml-->
+<image class="head" src="{{headimg}}"></image>
+<view class="name">
+  <text>{{name}}</text>
+  <!--<image wx:if="{{seximg!=0}}" src="{{seximg}"></image>-->
+</view>
+<view class="city" wx:if="{{city!=''}}">
+  <image src="../images/locate@2x.png"></image>
+  <text>{{province}}{{city}}</text>
+</view>
+<view class="line"></view>
+<view class="pay" bindtap='alreadypay'>
+  <view class="pay_left">
+    <image src="../images/pay.png"></image>
+    <text>已购商品</text>
+  </view>
+  <image class="pay_right" src="../images/right.png"></image>
+</view>
+<view class="pay" bindtap='telephone'>
+  <view class="pay_left">
+    <image src="../images/service@2x.png"></image>
+    <text>客服电话</text>
+  </view>
+  <image class="pay_right" src="../images/right.png"></image>
+</view>
+<view class="pay" bindtap='about'>
+  <view class="pay_left">
+    <image src="../images/about@2x.png"></image>
+    <text>关于</text>
+  </view>
+  <image class="pay_right" src="../images/right.png"></image>
+</view>

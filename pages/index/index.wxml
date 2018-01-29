@@ -1,0 +1,2 @@
+<!--index.wxml-->
+<image src="../images/start.png" bindtap='bindViewTap' style='width:100%;height:100%;'></image>

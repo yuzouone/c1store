@@ -1,0 +1,3 @@
+<!--pages/phone/phone.wxml-->
+<image src='../images/register@2x.png'></image>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">注册</button>

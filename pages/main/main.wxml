@@ -1,0 +1,15 @@
+<!--pages/main/main.wxml-->
+<text class="t1">将二维码对准扫码器以验证身份</text>
+<view class="canvas_all" wx:if="{{ifcanvas}}">
+  <canvas id="canvas" canvas-id="mycanvas"/>
+  <text class="t2" bindtap='reset'>如扫码失败，请<text class="t3">点此刷新</text></text>
+</view>
+
+<view class="motai" wx:if="{{ifmotai}}">
+  <view class="content">
+    <text class="p1">您有1个未支付账单</text>
+    <text class="p2">请先支付后再重新进店购物</text>
+    <button bindtap="bindnopay">去支付</button>  
+  </view>
+</view>
+

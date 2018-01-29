@@ -1,0 +1,28 @@
+<!--pages/alreadypay/alreadypay.wxml-->
+<view class="head">已购商品</view>
+<view class="main" wx:for="{{orders}}">
+  <view class="main_top">
+    <view class="date">
+      {{item.updateTime[0]}}<text class="date_text">月</text>
+      {{item.updateTime[1]}}<text class="date_text">日</text>
+    </view>
+    <view class="store">
+      <image src='../images/shop@3x.png'></image>
+      <text>{{item.shop}}</text>
+    </view>
+  </view>
+  <view class="content" wx:for="{{item.orderList}}" wx:for-item="item2">
+    <image src="{{item2.image}}" class="left"></image>
+    <view class="right">
+      <text class="t1">{{item2.productName}}</text>
+      <text class="t2">{{item2.taste}}</text>
+      <view class="t_bottom">
+        <text class="t3">￥{{item2.price}}</text>
+        <text class="t4">x {{item2.quantity}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
